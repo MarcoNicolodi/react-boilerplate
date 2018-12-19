@@ -2,13 +2,13 @@
 
 exports[`App component should match snapshot 1`] = `
 ShallowWrapper {
-  "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <App />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
     "render": [Function],
+    "simulateError": [Function],
     "simulateEvent": [Function],
     "unmount": [Function],
   },
@@ -19,7 +19,7 @@ ShallowWrapper {
     "props": Object {
       "children": <h1>
         Hello World!
-</h1>,
+      </h1>,
       "style": Object {
         "alignContent": "center",
         "display": "flex",
@@ -48,7 +48,7 @@ ShallowWrapper {
       "props": Object {
         "children": <h1>
           Hello World!
-</h1>,
+        </h1>,
         "style": Object {
           "alignContent": "center",
           "display": "flex",
@@ -74,6 +74,16 @@ ShallowWrapper {
     "adapter": ReactSixteenAdapter {
       "options": Object {
         "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
       },
     },
   },
