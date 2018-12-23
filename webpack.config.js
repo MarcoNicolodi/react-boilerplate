@@ -6,9 +6,11 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: './index.html',
   filename: 'index.html',
   inject: 'body',
+  hash: true,
 });
 
 module.exports = {
+  mode: 'development',
   entry: './index.jsx',
   output: {
     path: path.resolve('dist'),
@@ -16,9 +18,21 @@ module.exports = {
   },
 
   module: {
-    loaders: [
-      { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
-      { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/ },
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+        },
+      },
+      {
+        test: /\.jsx$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+        },
+      },
     ],
   },
   plugins: [HtmlWebpackPluginConfig, new FriendlyErrorsWebpackPlugin()],

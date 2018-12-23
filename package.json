@@ -8,7 +8,8 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "start": "webpack-dev-server",
-    "eslint": "./node_modules/.bin/eslint"
+    "eslint": "./node_modules/.bin/eslint",
+    "build": "webpack"
   },
   "jest": {
     "setupFiles": [
@@ -23,7 +24,7 @@
     "react",
     "reactjs",
     "babel",
-    "webpack2",
+    "webpack",
     "boilerplate"
   ],
   "author": "Marco Nicolodi",
@@ -51,12 +52,13 @@
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.4.0",
-    "friendly-errors-webpack-plugin": "^1.6.1",
-    "html-webpack-plugin": "^2.30.1",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "html-webpack-plugin": "^3.2.0",
     "jest": "^23.6.0",
     "path": "^0.12.7",
     "react-test-renderer": "^16.6.3",
-    "webpack": "^3.5.5",
-    "webpack-dev-server": "^2.7.1"
+    "webpack": "^4.28.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.13"
   }
 }
