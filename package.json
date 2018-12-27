@@ -8,7 +8,7 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "start": "webpack-dev-server",
-    "eslint": "./node_modules/.bin/eslint",
+    "eslint": "./node_modules/.bin/eslint --ext .jsx,.js src",
     "build": "webpack"
   },
   "jest": {
