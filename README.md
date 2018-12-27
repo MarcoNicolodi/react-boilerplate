@@ -8,7 +8,8 @@ Quickstart your project using:
 - [ ] Redux
 - [ ] Redux Saga
 - [ ] React Router
-- [ ] Docz
+- [ ] Docz/Storybook
+- [ ] Flow/TS
 - [x] Material UI
 - [x] Jest
 - [x] Enzyme
