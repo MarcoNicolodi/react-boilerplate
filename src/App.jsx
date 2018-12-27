@@ -1,18 +1,13 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import MenuIcon from '@material-ui/icons/Android';
+import Navbar from './components/navbar';
 
 const App = () => (
   <CssBaseline>
+    <Navbar />
     <div style={{ display: 'flex', justifyContent: 'center', alignContent: 'center' }}>
-      <Typography variant="h1">Hello World!</Typography>
-      <Button variant="contained" color="primary">
-      Hello World
-      </Button>
-      <MenuIcon />
-      <Button variant="contained" color="primary">Oi</Button>
+      <Typography variant="h2">Make wonderful things!</Typography>
     </div>
   </CssBaseline>
 );
