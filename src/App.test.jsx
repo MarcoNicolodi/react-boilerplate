@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import App from './App';
 
 describe('App component', () => {
@@ -9,7 +9,7 @@ describe('App component', () => {
   });
 
   it('should display a greating to the user', () => {
-    const app = shallow(<App />);
-    expect(app.find('h1').text()).toEqual('Hello World!');
+    const app = mount(<App />);
+    expect(app.find('h2').text()).toEqual('Make wonderful things!');
   });
 });
