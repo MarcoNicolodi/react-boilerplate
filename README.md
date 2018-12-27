@@ -4,7 +4,7 @@ Quickstart your project using:
 - [x] Webpack
 - [x] Babel
 - [x] ESLint
-- [ ] Prettier
+- [x] Prettier
 - [ ] Redux
 - [ ] Redux Saga
 - [ ] React Router
