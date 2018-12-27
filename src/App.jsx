@@ -6,7 +6,13 @@ import Navbar from './components/navbar';
 const App = () => (
   <CssBaseline>
     <Navbar />
-    <div style={{ display: 'flex', justifyContent: 'center', alignContent: 'center' }}>
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignContent: 'center'
+      }}
+    >
       <Typography variant="h2">Make wonderful things!</Typography>
     </div>
   </CssBaseline>
