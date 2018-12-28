@@ -13,5 +13,5 @@ Quickstart your project using:
 - [x] Material UI
 - [x] Jest
 - [x] Enzyme
-- [ ] Cypress
-- [ ] Docker
+- [x] Cypress
+- [x] Docker
