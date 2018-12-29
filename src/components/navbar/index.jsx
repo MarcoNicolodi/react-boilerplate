@@ -20,13 +20,19 @@ const styles = {
   }
 };
 
-function ButtonAppBar(props) {
-  const { classes } = props;
+const Navbar = props => {
+  const { classes, onMenuClick } = props;
   return (
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-          <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
+          <IconButton
+            onClick={() => onMenuClick(true)}
+            className={classes.menuButton}
+            color="inherit"
+            aria-label="Menu"
+            id="app-menu-icon"
+          >
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" color="inherit" className={classes.grow}>
@@ -37,6 +43,6 @@ function ButtonAppBar(props) {
       </AppBar>
     </div>
   );
-}
+};
 
-export default withStyles(styles)(ButtonAppBar);
+export default withStyles(styles)(Navbar);
